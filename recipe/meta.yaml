@@ -1,4 +1,4 @@
-{% set version = '0.2.0' %}
+{% set version = "0.3.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/botor_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/botor/botor_{{ version }}.tar.gz
-  sha256: ab2de6b5c030a37e178ad8ac572cc0938c0087303629e567db43a45fafe19e8e
+  sha256: 4f2321f8644b8847a9a74fb1106d2a6f762f96b86c8af1e1b8a4b89008bbf0c7
 
 build:
   merge_build_host: True  # [win]
