@@ -3,7 +3,7 @@ About r-botor
 
 Home: https://daroczig.github.io/botor
 
-Package license: AGPL-3
+Package license: AGPL-3.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-botor-feedstock/blob/master/LICENSE.txt)
 
