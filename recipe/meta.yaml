@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/botor_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/botor/botor_{{ version }}.tar.gz
-  sha256: 4f2321f8644b8847a9a74fb1106d2a6f762f96b86c8af1e1b8a4b89008bbf0c7
+  sha256: 9883fe22f59188a79af0830be287d96810d81e9bc607e58bb5a93651013c7c2b
 
 build:
-  merge_build_host: True  # [win]
-  number: 3
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -41,13 +41,10 @@ test:
 about:
   home: https://daroczig.github.io/botor
   license: AGPL-3.0-only
-  summary: Fork-safe, raw access to the 'Amazon Web Services' ('AWS') 'SDK' via the 'boto3' 'Python'
-    module, and convenient helper functions to query the 'Simple Storage Service' ('S3')
-    and 'Key Management Service' ('KMS'), partial support for 'IAM', the 'Systems Manager
-    Parameter Store' and 'Secrets Manager'.
+  summary: Fork-safe, raw access to the 'Amazon Web Services' ('AWS') 'SDK' via the 'boto3' 'Python' module, and convenient helper functions to query the 'Simple Storage Service' ('S3') and 'Key Management Service' ('KMS'), partial support for 'IAM', the 'Systems Manager Parameter Store' and 'Secrets Manager'.
   license_family: AGPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/AGPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/AGPL-3
 
 extra:
   recipe-maintainers:
