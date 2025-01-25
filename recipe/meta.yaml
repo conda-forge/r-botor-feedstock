@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/botor_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/botor/botor_{{ version }}.tar.gz
-  sha256: 9883fe22f59188a79af0830be287d96810d81e9bc607e58bb5a93651013c7c2b
+  sha256: eae1a460218fff88ee81e7b5e15c7ae121370c10f8e61113b7631ca367b4b69e
 
 build:
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
